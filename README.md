@@ -1,4 +1,4 @@
-# Projekt i Webbdesign för CMS (DT197G) administrativ webbplats
+# Projekt i Webbdesign för CMS (DT197G)
 I detta repository finns källkodsfiler för en webbplats skapad med WordPress för ett fiktivt företag i form av ett vandrarhotell. 
 Denna webbplats har skapats för projektarbetet i kursen Webbdesign för CMS på Mittuniversitetet. 
 
