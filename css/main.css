@@ -1,0 +1,746 @@
+/*
+*Created by Sofia Widholm. 
+*Webbdesign för CMS, Webbutveckling, Mittuniversitetet.
+*Last update 2022-08-16
+*/
+
+/* IMPORT OF FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap");
+
+/* RESETS AND BASIC SETTINGS */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input[type="submit"] {
+  box-shadow: none;
+  border: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* TEXT ELEMENTS */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1001px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.15em;
+  }
+}
+
+/* LAYOUT ELEMENTS */
+header {
+  box-sizing: border-box;
+}
+
+header div {
+  padding: 1%;
+  background-color: #205375;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div img {
+  width: 20%;
+  min-width: 235px;
+}
+@media (max-width: 600px) {
+  header div img {
+    width: 50%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  header div img {
+    width: 40%;
+    min-width: 250px;
+  }
+}
+
+main {
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  background-color: #205375;
+  color: #ffffff;
+  margin: auto;
+  text-align: center;
+  padding: 2% 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1001px) {
+  footer img {
+    width: 20%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  footer img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  footer img {
+    width: 80%;
+  }
+}
+
+.wide-width {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .wide-width {
+    width: 95%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .wide-width {
+    width: 90%;
+  }
+}
+@media (min-width: 1001px) {
+  .wide-width {
+    width: 60%;
+    min-width: 770px;
+  }
+}
+
+.small-width {
+  margin: 2% auto;
+  box-sizing: border-box;
+}
+
+.small-width figure img {
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .small-width {
+    width: 95%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .small-width {
+    width: 90%;
+  }
+}
+@media (min-width: 1001px) {
+  .small-width {
+    width: 40%;
+    min-width: 770px;
+  }
+}
+
+.rooms section {
+  margin: 2% auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .rooms section {
+    width: 95%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .rooms section {
+    width: 90%;
+  }
+}
+@media (min-width: 1001px) {
+  .rooms section {
+    width: 40%;
+    min-width: 770px;
+  }
+}
+
+.news article,
+.rooms article {
+  border-radius: 8px;
+  padding: 2%;
+  box-shadow: 0px 2px 7px #c4c4c4;
+  box-sizing: border-box;
+}
+.news article div,
+.rooms article div {
+  width: 50%;
+}
+
+.news img, .rooms img {
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .news article div,
+  .rooms article div {
+    width: 100%;
+  }
+
+  .news .date, .news h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .news article div,
+  .rooms article div {
+    width: 100%;
+  }
+}
+
+/* GRIDS */
+.flex {
+  display: flex;
+  gap: 2%;
+}
+
+@media (max-width: 600px) {
+  .flex {
+    display: block;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .flex {
+    display: block;
+  }
+}
+
+.grid {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+}
+
+.about-grid {
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1% 2%;
+}
+
+/* FORM ELEMENT */
+form {
+  width: 100%;
+  max-width: 100%;
+}
+
+input[type="text"], textarea {
+  align-items: center;
+  padding-left: 1%;
+  font-size: 1em;
+  width: 100%;
+  line-height: 44px;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0.5% 0 0 0;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  height: 150px;
+}
+
+/* NAVIGATION */
+
+/* Mobile menu */
+@media (max-width: 600px) {
+  nav .menu[data-visible="true"] {
+    transform: translateX(0%);
+    transition: transform 350ms ease-in;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    border: 0;
+    width: 2em;
+    top: 1.3em;
+    right: 1em;
+    font-size: 110%;
+    background-color: transparent;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] .close {
+    display: block;
+    color: white;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] .open {
+    display: none;
+  }
+
+  .mobile-nav-toggle[aria-expanded="false"] .close {
+    display: none;
+  }
+
+  .mobile-nav-toggle[aria-expanded="false"] .open {
+    display: block;
+    color: white;
+  }
+
+  nav .menu {
+    z-index: 1000;
+    gap: 0.2em;
+    position: fixed;
+    inset: 0 0 0 50%;
+    background-color: #205375;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: min(20vh, 4em) 0;
+    transform: translateX(100%);
+  }
+  nav .menu li {
+    padding: 4%;
+    display: block;
+  }
+  nav .menu li:hover {
+    background-color: #15374d;
+  }
+  nav .menu li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  nav .menu li a:hover {
+    border: none;
+  }
+}
+
+/* Tablet menu */
+@media (min-width: 601px) and (max-width: 1000px) {
+  nav .menu[data-visible="true"] {
+    transform: translateX(0%);
+    transition: transform 350ms ease-in;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    border: 0;
+    width: 2em;
+    top: 1.7em;
+    right: 1em;
+    font-size: 110%;
+    background-color: transparent;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] .close {
+    display: block;
+    color: white;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] .open {
+    display: none;
+  }
+
+  .mobile-nav-toggle[aria-expanded="false"] .close {
+    display: none;
+  }
+
+  .mobile-nav-toggle[aria-expanded="false"] .open {
+    display: block;
+    color: white;
+  }
+
+  nav .menu {
+    z-index: 1000;
+    gap: 0.2em;
+    position: fixed;
+    inset: 0 0 0 50%;
+    background-color: #205375;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: min(20vh, 4em) 0;
+    transform: translateX(100%);
+  }
+  nav .menu li {
+    padding: 4%;
+    display: block;
+  }
+  nav .menu li:hover {
+    background-color: #15374d;
+  }
+  nav .menu li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  nav .menu li a:hover {
+    border: none;
+  }
+}
+
+/* Desktop menu */
+@media (min-width: 1001px) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  nav {
+    width: 90%;
+    text-align: right;
+  }
+  nav ul {
+    width: 100%;
+    padding: 0;
+  }
+  nav ul li {
+    width: 10%;
+    min-width: 100px;
+    padding: 0 0.5%;
+    display: inline-block;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    border-bottom: 2px solid #205375;
+    font-size: 1.125em;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .current-menu-item a {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+/* BUTTONS */
+.basic-button {
+  display: inline-block;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1%;
+  min-height: 44px;
+  line-height: 44px;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 1.5%;
+  font-family: "Poppins", sans-serif;
+  background-color: #205375;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.basic-button:hover {
+  background-color: #15374d;
+}
+@media (max-width: 600px) {
+  .basic-button {
+    width: 100%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .basic-button {
+    width: 50%;
+  }
+}
+@media (min-width: 1001px) {
+  .basic-button {
+    width: 50%;
+  }
+}
+
+/* CARDS */
+/* Card activities */
+.grid .card {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 2px #c4c4c4;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .grid .card {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .grid .card {
+    width: 46%;
+    margin: 3% 0;
+  }
+}
+@media (min-width: 1001px) {
+  .grid .card {
+    width: 32%;
+    margin: 3% 0;
+  }
+}
+.grid .card section {
+  padding: 1% 2%;
+  background-color: #205375;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+.grid .card section h2 {
+  font-size: 1.75em;
+}
+.grid .card div {
+  font-size: 0;
+}
+.grid .card div img {
+  border-radius: 8px 8px 0 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Card managers */
+.about-grid .card {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .about-grid .card {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .about-grid .card {
+    width: 46%;
+    margin: 3% 0;
+  }
+}
+@media (min-width: 1001px) {
+  .about-grid .card {
+    width: 30%;
+    margin: 3% 1%;
+    color: black;
+  }
+}
+.about-grid .card section {
+  padding: 0 2%;
+  text-align: center;
+}
+.about-grid .card div {
+  font-size: 0;
+}
+.about-grid .card div img {
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-grid .card a {
+  color: black;
+}
+
+/* MISCELLANEOUS */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Widget */
+#widget-frontpage {
+  background-color: #205375;
+  color: #ffffff;
+  padding: 2% 5%;
+  margin: 4% 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+#widget-frontpage h2 {
+  text-align: center;
+}
+
+/* Color block on front page */
+.color-block {
+  background-color: #205375;
+  padding: 2% 0;
+  box-sizing: border-box;
+}
+.color-block div {
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .color-block div {
+    width: 95%;
+    display: block;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .color-block div {
+    width: 90%;
+    display: flex;
+  }
+}
+@media (min-width: 1001px) {
+  .color-block div {
+    width: 60%;
+    min-width: 770px;
+  }
+}
+.color-block div a {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .color-block div a {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    display: block;
+    margin: 4% auto;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .color-block div a {
+    width: 33%;
+    display: block;
+    margin: 2% 0;
+  }
+}
+.color-block div a img {
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.color-block div a h2 {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 4px 4px 8px #444444;
+  margin: 0;
+}
+
+/*# sourceMappingURL=maps/main.css.map */
